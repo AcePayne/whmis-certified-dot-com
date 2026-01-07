@@ -1,0 +1,15 @@
+---
+import { getCollection } from 'astro:content';
+import type { CollectionEntry } from 'astro:content';
+import MainLayout from '../../layouts/MainLayout.astro';
+
+const articles = await getCollection('articles');
+---
+<MainLayout title="WHMIS Articles" description="A collection of WHMIS related articles.">
+    <h1>WHMIS Articles</h1>
+    <ul>
+    {articles.map((article: CollectionEntry<'articles'>) => (
+    <li><a href={`/articles/${article.id}`}>{article.data.title}</a></li>
+    ))}
+    </ul>
+</MainLayout>
