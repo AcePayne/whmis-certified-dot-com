@@ -1,0 +1,53 @@
+---
+// Props: multiLink, singleLink, multiPrice, singlePrice
+const {
+  multiLink = "#",
+  singleLink = "#",
+  multiPrice = "$19.99",
+  singlePrice = "$29.99",
+} = Astro.props;
+---
+
+<aside class="max-w-xs bg-white rounded-lg shadow-md p-4 text-slate-800 h-full flex flex-col justify-between">
+  <div class="space-y-4 flex-1">
+    <section class="border rounded p-3 bg-gradient-to-b from-amber-50 to-white">
+      <h4 class="text-sm font-semibold text-amber-700 mb-2">WHMIS for Multiple People</h4>
+      <ul class="text-sm text-slate-600 list-disc list-inside space-y-1 mb-3">
+        <li>Convenient Online Access</li>
+        <li>Over 250,000 Training</li>
+        <li>Canadian Compliant Course</li>
+        <li>WHMIS Certificates Issued</li>
+      </ul>
+      <div class="flex flex-col lg:flex-row gap-1 items-stretch justify-between">
+        <div class="bg-sky-600 text-white rounded-lg text-sm font-bold flex items-center px-4 h-10">{multiPrice} <span class="text-xs font-normal ml-1">per person</span></div>
+        <a href={multiLink} class="inline-flex items-center justify-center gap-2 bg-orange-500 hover:bg-orange-600 text-white px-4 h-10 rounded shadow">
+          <span>Signup</span>
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+            <path d="M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <section class="border rounded p-3 bg-gradient-to-b from-emerald-50 to-white mt-4">
+      <h4 class="text-sm font-semibold text-emerald-700 mb-2">WHMIS for Myself</h4>
+      <ul class="text-sm text-slate-600 list-disc list-inside space-y-1 mb-3">
+        <li>Get Certified Now</li>
+        <li>Canadian Compliant Course</li>
+        <li>Certificate Issued Instantly</li>
+        <li>Safe Secure Signup</li>
+      </ul>
+      <div class="flex flex-col lg:flex-row gap-1 items-stretch justify-between">
+        <div class="bg-sky-600 text-white rounded-lg text-sm text-center font-bold flex items-center px-4 h-10">{singlePrice}</div>
+        <a href={singleLink} class="inline-flex items-center justify-center gap-2 bg-orange-500 hover:bg-orange-600 text-white px-4 h-10 rounded shadow">
+          <span>Signup</span>
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+            <path d="M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+    </section>
+  </div>
+</aside>

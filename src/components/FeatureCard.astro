@@ -1,0 +1,19 @@
+---
+// Props:
+// title: string
+// imageSrc: string
+// imageAlt: string
+// content: string (html allowed) or slot
+// imageRightOnMobile: boolean (when true, image appears to the right on small screens)
+const { title = '', imageSrc = '/images/placeholder.png', imageAlt = title, imageRightOnMobile = false } = Astro.props;
+---
+
+<article class={imageRightOnMobile ? 'flex flex-row-reverse md:flex-col items-start gap-4 p-4 bg-white rounded shadow' : 'flex flex-row md:flex-col items-start gap-4 p-4 bg-white rounded shadow'}>
+  <img src={imageSrc} alt={imageAlt} class="w-28 h-20 object-cover rounded md:w-full md:h-40" />
+  <div class="flex-1">
+    <h4 class="font-semibold text-lg mb-2">{title}</h4>
+    <div class="text-sm text-slate-600">
+      <slot />
+    </div>
+  </div>
+</article>

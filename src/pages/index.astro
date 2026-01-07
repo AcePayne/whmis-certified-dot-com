@@ -1,16 +1,81 @@
 ---
-
+import MainLayout from '../layouts/MainLayout.astro';
+import SignupCard from '../components/SignupCard.astro';
+import FeatureCard from '../components/FeatureCard.astro';
 ---
+<MainLayout 
+	title="WHMIS Certified Home!" 
+	description="Fast, online WHMIS training and certification for workplaces.">
+	<section id="hero" class="grid md:grid-cols-12 gap-10 items-stretch">
+		<div class="md:col-span-8 h-full space-y-6 bg-white/70 backdrop-blur-sm p-6 rounded-lg shadow-sm">
+			<h2 class="text-4xl md:text-5xl font-extrabold leading-tight text-slate-900">WHMIS training for businesses and individuals</h2>
+			<p class="text-lg text-slate-600 max-w-xl">Fast, reliable WHMIS training with instant certificate issuance. Options for individuals and group accounts — employer-ready and compliant.</p>
+			<div class="flex flex-wrap gap-3 items-center">
+				<a href="https://safeandcertified.com/register/register-self-serve-business.asp" class="inline-block bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-3 rounded-lg shadow">Business Account Setup</a>
+				<a href="https://safeandcertified.com/register/register-personal.asp" class="inline-block border border-slate-200 px-5 py-3 rounded-lg text-slate-700">Buy for Individuals</a>
+			</div>
+			<div class="flex gap-4 mt-2 text-sm text-slate-600">
+				<div class="flex items-center gap-2">
+					<span class="inline-block w-2 h-2 rounded-full bg-emerald-500" aria-hidden></span>
+					<span>Printable certificate emailed instantly</span>
+				</div>
+				<div class="flex items-center gap-2">
+					<span class="inline-block w-2 h-2 rounded-full bg-emerald-500" aria-hidden></span>
+					<span>Group account management</span>
+				</div>
+			</div>
+		</div>
+		<div class="md:col-span-4 flex justify-center md:justify-end">
+			<div class="w-full max-w-xs h-full">
+				<SignupCard multiLink="/group" singleLink="/self" multiPrice="$19.99" singlePrice="$29.99" />
+			</div>
+		</div>
+	</section>
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+	<section id="highlights" class="mt-12">
+		<div class="max-w-6xl mx-auto px-6">
+			<div class="grid md:grid-cols-3 gap-6">
+				<FeatureCard title="WHMIS for Business" imageSrc="/images/home_smallimage1.jpg" imageRightOnMobile={false}>
+					<p class="text-sm"><span class="font-semibold">Canadian Compliant WHMIS Course, Testing and WHMIS Certificate.</span> Get a Company Account to store and manage all your whmis training records. On average the materials can be completed in 100 minutes and the test takes 20 minutes so even if someone does not pass on the first attempt they can typically complete and pass the test in less than two hours. <span class="font-semibold">We personally set up your Company WHMIS Training account, load your employees and can issue their Access Codes so you can be training the same day - or use the self-serve Company Signup Option for instant access for each employee for WHMIS and whmis renewals.</span></p>
+				</FeatureCard>
+				<FeatureCard title="Individual WHMIS" imageSrc="/images/home_smallimage2.jpg" imageRightOnMobile={true}>
+					<p class="text-sm"><span class="font-semibold">Get WHMIS Certified or a whmis renewal</span> in less than 2 hours. Most people can complete the WHMIS Training Materials in 100 minutes, take the WHMIS Test in 20 minutes and print their WHMIS Certificate in one minute . You receive a WHMIS Certificate of Completion in a full size and wallet size format. Your login is valid for one year so if you ever need to reprint your WHMIS certificate you can login and reprint it instantly. Your whmis training records are securely stored online. If you ever have any whmis questions or concerns we are only a phone call or email away.  <span class="font-semibold">We offer full service and support.</span></p>
+				</FeatureCard>
+				<FeatureCard title="Over 250,000 Trained!" imageSrc="/images/home_smallimage3.jpg" imageRightOnMobile={false}>
+					<p class="text-sm">Online WHMIS training with SafeAndCertified.com is the easiest way to schedule training, the fastest way to get it done, and the most affordable way to make sure your employees are <span class="font-semibold">WHMIS certified and renew their WHMIS.</span> We are experts in delivering online training and testing and managing your training records. This lets you be experts at what you do. Rates are just $19.99 per person with a Company Account.  If you are looking for <span class="font-semibold">WHMIS Training for yourself</span> sign up pay and get it immediately. If you are looking for <span class="font-semibold">WHMIS Training for your Business</span> or group of people our service specialists can get you set up and ready to go the same day.</p>
+				</FeatureCard>
+			</div>
+		</div>
+	</section>
+
+	
+
+	<section id="courses" class="mt-16">
+		<h3 class="text-2xl font-bold mb-6">Popular courses</h3>
+		<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+			<article class="bg-white p-5 rounded-lg shadow">
+				<h4 class="font-semibold">WHMIS Basic</h4>
+				<p class="text-sm text-slate-600">Core concepts, labels, SDS basics.</p>
+			</article>
+			<article class="bg-white p-5 rounded-lg shadow">
+				<h4 class="font-semibold">WHMIS for Supervisors</h4>
+				<p class="text-sm text-slate-600">Responsibilities, assessments, and training management.</p>
+			</article>
+			<article class="bg-white p-5 rounded-lg shadow">
+				<h4 class="font-semibold">WHMIS Refresher</h4>
+				<p class="text-sm text-slate-600">Short refresher for recertification.</p>
+			</article>
+		</div>
+	</section>
+
+	<section id="contact" class="mt-16 bg-white p-6 rounded-lg shadow">
+		<h3 class="text-2xl font-bold mb-4">Get in touch</h3>
+		<p class="text-slate-600 mb-4">Questions about group pricing or integrations? Contact us.</p>
+		<form class="grid sm:grid-cols-2 gap-4">
+			<input aria-label="Name" placeholder="Your name" class="border p-3 rounded" />
+			<input aria-label="Email" placeholder="Email address" class="border p-3 rounded" />
+			<textarea aria-label="Message" placeholder="Message" class="border p-3 rounded sm:col-span-2"></textarea>
+			<button type="submit" class="bg-sky-600 hover:bg-sky-700 text-white px-4 py-2 rounded">Send</button>
+		</form>
+	</section>
+</MainLayout>

@@ -1,0 +1,56 @@
+---
+import "../styles/global.css";
+import Head from "../components/Head.astro";
+import Header from "../components/Header.astro";
+
+const { title, description } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<Head title={title} description={description} />
+	<body class="antialiased text-slate-800 bg-slate-50">
+		<Header />
+
+		<main class="max-w-6xl mx-auto px-6 py-16">
+			<slot />
+		</main>
+
+		<footer class="mt-16 py-8 bg-[#0b5f9e] text-sky-100">
+			<div class="max-w-6xl mx-auto px-6">
+				<div class="flex flex-col md:flex-row md:justify-between items-center md:items-start gap-6">
+					<div class="w-full md:w-1/4 text-center md:text-left">
+						<p>
+							Safe And Certified.com Inc.<br>
+							Copyright © {new Date().getFullYear()}<br>
+							All Rights Reserved.
+						</p>
+					</div>
+					<div class="w-full md:w-1/4 text-center md:text-left">
+						<p>
+							201-301 Nassau Street North<br>
+							Winnipeg, Manitoba R3L 2J5 Canada<br>
+							Phone: 1-877-425-5820
+						</p>
+						<p>
+							<a href="http://www.trainingtodo.com" target="_blank" class="text-sky-100 hover:underline">Powered by the TrainingToDo.com Training Engine</a>
+						</p>
+					</div>
+					<div class="w-full md:w-1/4 flex flex-col items-center text-center">
+						<a href="/" class="inline-block mb-2">
+							<img src="/images/WHMIS_Poster_free.jpg" alt="Free WHMIS Poster" class="max-w-[140px] h-auto rounded mx-auto" />
+						</a>
+						<a href="/" class="text-sky-100 hover:underline mx-auto">Free WHMIS Poster</a>
+					</div>
+					<div class="w-full md:w-1/4 text-center md:text-left space-y-2">
+						<a href="#" class="block text-sky-100 hover:underline">Privacy Policy</a>
+						<a href="#" class="block text-sky-100 hover:underline">WHMIS Questions</a>
+						<a href="#" class="block text-sky-100 hover:underline">WHMIS Articles</a>
+						<a href="#" class="block text-sky-100 hover:underline">Renew my WHMIS</a>
+						<a href="#" class="block text-sky-100 hover:underline">Recertify Employee WHMIS</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

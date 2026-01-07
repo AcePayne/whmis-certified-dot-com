@@ -1,0 +1,33 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import SignupCard from "../components/SignupCard.astro";
+---
+<MainLayout 
+    title="Get WHMIS Certified Today!" 
+    description="Fast, reliable WHMIS training with instant certificate issuance. Options for individuals and group accounts — employer-ready and compliant.">
+    <section id="article" class="mt-1">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid md:grid-cols-12 gap-6 items-stretch">
+                <article class="md:col-span-8 bg-gradient-to-b from-amber-50 to-white p-6 rounded-lg shadow-md border border-amber-100 leading-relaxed text-slate-700">
+                    <h1 class="text-2xl font-bold mb-4">Get Your WHMIS Certificate Online - Be Safe and Certified in Less Time</h1>
+                    <p class="mb-4">Receive your WHMIS Certificate in less time, for less money. You get personalized service. You can call toll free and give us your business name, address and contact person information and we take care of the rest. One of our Customer Account representatives creates your Company Account and emails you instructions on how you can access your account. You can enter your employees and issue the access codes.</p>
+                    <p class="mb-4">You can even send us your list of employees and we will enter them for you. If each employee has an email address their Access Code can be emailed directly to them. Or you can have all the access codes emailed to you and you can distribute them to each employee. Either way you can be set up in minutes and have your employees trained, tested and certified the same day.</p>
+                    <p class="mb-4">Click on the Group WHMIS Training Setup link on the right hand side of this page, fill in your company info and click Send. One of our Customer Account representatives will contact you to confirm the account setup and you will be on your way to getting your employees WHMIS training completed. Upon passing the test a WHMIS Certificate of Completion is instantly emailed to you and your employee and can be resent at any time.</p>
+                    <p class="mb-4">Individuals looking for a personal Certificate of Completion can click on the Personal WHMIS Certificate link on the right. You will be prompted to enter your name, email address and phone number. Your name is printed on the certificate once you successfully complete the test and it is emailed to you as a PDF or you can print the certificate. You have several payment options. SafeAndCertified.com uses PayPal as a payment processor. PayPal is one of the world's leading payment processors. You do not have to have a PayPal account, you can use your Visa, MasterCard, or American Express.</p>
+                    <p class="mb-4">Once you enter your name and email address on our site you will be redirected to a secure PayPal page to enter your credit card information and then returned to SafeAndCertified with a confirmation message. You will receive an email with your transaction information and a second email with a link to login as a Trainee on the SafeAndCertified.com site with your username and Access Code. If you have any problems please call us toll free at 1-877-425-5820 or email <a href="mailto:info@SafeAndCertified.com" class="text-sky-600 hover:underline">info@SafeAndCertified.com</a>.</p>
+                    <p><a href="/" class="text-sky-600 hover:underline">Return from WHMIS Certificate to WHMIS Certified</a></p>
+                </article>
+
+                <div class="md:col-span-4 flex justify-center md:justify-end">
+                    <div class="w-full max-w-xs h-full">
+                        <SignupCard 
+                            multiLink="https://safeandcertified.com/register/register-self-serve-business.asp" 
+                            singleLink="https://safeandcertified.com/register/register-personal.asp" 
+                            multiPrice="$19.99" 
+                            singlePrice="$29.99" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</MainLayout>
