@@ -1,0 +1,39 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import SignupCard from "../components/SignupCard.astro";
+---
+<MainLayout 
+    title="whmis poster for free | free WHMIS poster" 
+    description="Get a WHMIS poster for free to post in your workplace. Posters are a great reminder of the classifications of hazardous products and their symbols. Get a free WHMIS poster by entering your email address and clicking the Get Now button.">
+    <section id="article" class="mt-1">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid md:grid-cols-12 gap-6 items-stretch">
+                <article class="md:col-span-8 bg-linear-to-b from-amber-50 to-white p-6 rounded-lg shadow-md border border-amber-100 leading-relaxed text-slate-700">
+                    <h1 class="text-2xl font-bold mb-4">Get Your WHMIS Certificate Online - Be Safe and Certified in Less Time</h1>
+                    <p class="mb-4"><strong><em>WHMIS - Workplace Hazardous Materials Information System or <span class="underline">WHMIS</span></em></strong> is a cross Canada program intended to provide employees and employers with information about hazardous materials in the workplace.</p>
+					<p class="mb-4">It is rare that a workplace would NOT have hazardous products.&nbsp; Most restaurants have cleaning supplies.&nbsp; Most offices have fire extinguishers  and printing toners that are classified as hazardous products.&nbsp; The purpose of WHMIS is to ensure that both workers and employers have access to information on the hazards of every product they work with, or may be exposed to.&nbsp; This applies to all workers and not just the people who are &ldquo;hands on&rdquo; using the product.</p>
+					<p class="mb-4">A WHMIS poster shows the classifications of WHMIS and the associated symbols that are on the product packaging.&nbsp; SafeAndCertified.com provides WHMIS training testing, and WHMIS certification to thousands of individuals and businesses with over 70,000 people trained.&nbsp; As a response to requests from customers we are providing&nbsp; a free WHMIS PDF poster which you can have emailed to you instantly.</p>
+                    <form action="#">
+                        <label for="email" class="block mb-2 font-medium">Enter your email address to receive your free WHMIS poster:</label>
+                        <div class="flex mb-4">
+                            <input type="email" id="email" name="email" required class="w-full p-2 border border-gray-300 rounded-2-sm focus:outline-none focus:ring-2 focus:ring-sky-500" placeholder="Enter your email address">
+                            <button type="submit" class="bg-sky-600 text-white px-4 py-2 rounded-r-md hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-500">Get Now</button>
+                        </div>
+                    </form>
+                    
+                    <p><a href="/" class="text-sky-600 hover:underline">Return from WHMIS Poster Free to WHMIS Certified</a></p>
+                </article>
+
+                <div class="md:col-span-4 flex justify-center md:justify-end">
+                    <div class="w-full max-w-xs h-full">
+                        <SignupCard 
+                            multiLink="https://safeandcertified.com/register/register-self-serve-business.asp" 
+                            singleLink="https://safeandcertified.com/register/register-personal.asp" 
+                            multiPrice="$19.99" 
+                            singlePrice="$29.99" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</MainLayout>
