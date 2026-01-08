@@ -1,11 +1,44 @@
 ---
 import { ClientRouter } from "astro:transitions";
-const {title, description} = Astro.props;
+import { SEO } from "astro-seo";
+
+// Define and destructure props for your Head component
+// This allows you to pass dynamic data from your pages or layouts
+export interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description } = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const titleTemplate = "%s — WHMISCertified.com";
+const image = "/images/logo.jpg";
 ---
 <head>
+    <SEO
+        title={title}
+        description={description}
+        canonical={canonicalURL.toString()}
+        titleTemplate={titleTemplate}
+        openGraph={{
+            basic: {
+            title: title,
+            type: "website",
+            image: image || "https://www.example.com/default-og-image.jpg",
+            },
+            optional: {
+                siteName: "WHMIS Certified",
+            }
+        }}
+        extend={{
+            link: [{ rel: "icon", href: "/favicon.svg" }],
+            meta: [
+                // You can add arbitrary meta tags here
+            ],
+        }}
+    />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="description" content={description} />
-    <title>{title}</title>
     <ClientRouter />
 </head>
