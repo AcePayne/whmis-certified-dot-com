@@ -1,0 +1,37 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import SignupCard from "../components/SignupCard.astro";
+---
+<MainLayout 
+    title="Renew my whmis | renew whmis certificate | new WHMIS card" 
+    description="Do I need to renew my whmis?  I was working on contract and told I need to get a new WHMIS card.  Yes, it is important to be up to date on WHMIS and you can do that by completing a WHMIS training course or WHMIS test that gives you a whmis certificate or WHMIS card.">
+    <section id="article" class="mt-1">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid md:grid-cols-12 gap-6 items-stretch">
+                <article class="md:col-span-8 bg-linear-to-b from-amber-50 to-white p-6 rounded-lg shadow-md border border-amber-100 leading-relaxed text-slate-700">          
+                    <h1 class="text-2xl font-bold mb-4">"Renew my WHMIS" - What does it mean?</h1>
+                    <p class="mb-4">&ldquo;I was told I needed to renew my whmis&rdquo;. When people call us this is a common opening statement we hear.&nbsp; There are a lot of people working on contract, as subcontractors, or looking for a job that are told they will need to have a &ldquo;valid WHMIS certificate&rdquo;.&nbsp; When someone says they are looking for a Valid WHMIS Certificate what they really mean is that you got the certificate from a reputable provider (such as SafeAndCertified.com) who has a comprehensive training courses that includes a testing process.</p>
+                    <p class="mb-4">The second item they will be looking for is that the training and testing was completed within the past year.&nbsp; So if the certificate has an expiry date, or has a date of completion they are looking to see that your knowledge on WHMIS is fairly recent &ndash; within the last year.&nbsp; Which is what they need to do.&nbsp; An employer needs to ensure their employees are knowledgeable on WHMIS, and the training and testing is one way they can do that.</p>
+                    <p class="mb-4">A common follow up question is, &ldquo;is a WHMIS renewal the same as taking WHMIS for the first time&rdquo;?&nbsp; The answer is it could be.&nbsp; Some companies and training providers have a first time WHMIS course and have a whmis refresher or whmis renewal that they use when someone wants to replace their WHMIS card or get a new WHMIS certificate.&nbsp; Both options can be acceptable.</p>
+                    <p class="mb-4">When you need whmis for the first time or to renew whmis that you may have taken several years ago you can enroll in our comprehensive online WHMIS course &ndash; valid across Canada &ndash; complete the course online and get your certificate displayed instantly when done &ndash; as well as having a copy emailed to you.</p>
+                    <p class="mb-4">
+                        <a class="text-sky-600 hover:underline" href="https://safeandcertified.com/secure_pro/register.asp">Click here to enroll in whmis for yourself</a>
+                    </p>
+                    <p>
+                        <a class="text-sky-600 hover:underline" href="/" >Return from Renew my WHMIS to Home</a>
+                    </p>
+                </article>
+
+                <div class="md:col-span-4 flex justify-center md:justify-end">
+                    <div class="w-full max-w-xs h-full">
+                        <SignupCard 
+                            multiLink="https://safeandcertified.com/register/register-self-serve-business.asp" 
+                            singleLink="https://safeandcertified.com/register/register-personal.asp" 
+                            multiPrice="$19.99" 
+                            singlePrice="$29.99" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</MainLayout>

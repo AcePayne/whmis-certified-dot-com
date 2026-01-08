@@ -1,0 +1,37 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import SignupCard from "../components/SignupCard.astro";
+---
+<MainLayout 
+    title="Recertify employee whmis | renew my employees whmis" 
+    description="Employeers needs to ensure their employees are knowledgeable on whmis as part of their annual review of their WHMIS program.  This often creates a need to recertify employees for WHMIS.">
+    <section id="article" class="mt-1">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid md:grid-cols-12 gap-6 items-stretch">
+                <article class="md:col-span-8 bg-linear-to-b from-amber-50 to-white p-6 rounded-lg shadow-md border border-amber-100 leading-relaxed text-slate-700">          
+                    <h1 class="text-2xl font-bold mb-4">Recertify employees for WHMIS</h1>
+                    <p class="mb-4"><strong>What does it really mean to &ldquo;recertify employees for WHMIS&rdquo;?</strong>&nbsp; This is a question we get from employers, business owners, and safety representatives, checking on what they need to do for WHMIS training and retraining.</p>
+                    <p class="mb-4">When you check the WHMIS requirements you will see one of the actions employers have to take is an annual review of their WHMIS program and includes reviewing the controlled products they have in the workplace, and ensuring employees have been made aware of any changes since the last review &ndash; which needs to be done once a year.</p>
+                    <p class="mb-4">Included in the annual WHMIS review is the requirement that employers ensure all workers are knowledgeable on WHMIS.&nbsp; This is where you may get to the need to retrain, retest, or recertify your employees as a way to demonstrate that your employees do understand WHMIS and are knowledgeable on WHMIS.</p>
+                    <p class="mb-4">This is one of the mail reasons so many businesses use an online training system such as SafeAndCertified.com to manage their WHMIS training records.&nbsp; Each employees training records are stored in their Company Account allowing them to view each person&rsquo;s training history and can help to show each time they took the WHMIS course, their test results, and their WHMIS certificate of completion (or that you did recertify for WHMIS for each employee that required it).</p>
+                    <p class="mb-4"><strong><em>Let us know if you want more info on WHMIS or how to recertify employees for WHMIS for your business.</em></strong></p>
+                    <p class="mb-4">Here is a link to an Express Setup if you want to get started now.&nbsp; <a class="text-sky-600 hover:underline" href="https://whmiscertified.com/setup.asp">whmiscertified.com/setup.asp</a></p>
+
+                    <p>
+                        <a class="text-sky-600 hover:underline" href="/" >Return from Recertify Employee WHMIS to Home</a>
+                    </p>  
+                </article>
+
+                <div class="md:col-span-4 flex justify-center md:justify-end">
+                    <div class="w-full max-w-xs h-full">
+                        <SignupCard 
+                            multiLink="https://safeandcertified.com/register/register-self-serve-business.asp" 
+                            singleLink="https://safeandcertified.com/register/register-personal.asp" 
+                            multiPrice="$19.99" 
+                            singlePrice="$29.99" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</MainLayout>

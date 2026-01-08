@@ -1,0 +1,33 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import SignupCard from "../components/SignupCard.astro";
+---
+<MainLayout 
+    title="WHMIS Training Online Certificate" 
+    description="WHMIS Training is required for most employees in Canada. Find out how you can get your employees WHMIS Certified online by getting set up in minutes and trained in a couple hours.">
+    <section id="article" class="mt-1">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid md:grid-cols-12 gap-6 items-stretch">
+                <article class="md:col-span-8 bg-linear-to-b from-amber-50 to-white p-6 rounded-lg shadow-md border border-amber-100 leading-relaxed text-slate-700">
+                    <h1 class="text-2xl font-bold mb-4">WHMIS Training with Personal Service and Online Rates</h1>
+                    <p class="mb-4">WHMIS training online is the way to go. Our WHMIS training materials are based on the same materials that have been used to train thousands in classroom based workshops, and have been converted to a digital format so your employees can read and listen to the audio narration. This is a comprehensive set of materials in eight modules to allow trainees to test their knowledge, gain confidence and prepare for the test.</p>
+                    <p class="mb-4">The WHMIS testing process has been developed over years using a pool of questions from which a random set of test questions are drawn for each person. All test questions are multiple choice, true/false and yes/no and the results are displayed instantly upon completion of the test and clicking on the Submit Test button.</p>
+                    <p class="mb-4">If the test is passed the employee receives their certificate by email and their supervisor can be notified by email as well. If they do not pass they receive a message that they did not reach the passing grade and can review their test to see which questions they did not get correct. They can then review the materials if necessary and when ready retake the test. There is no fee to retake the test.</p>
+                    <p class="mb-4">Classroom WHMIS training is an effective way to ensure employees are knowledgeable on the WHMIS legislation, WHMIS Symbols, and how to read a SDS.  The question is do you need to train in person with a facilitator or can you use a self serve method of delivery that an online training delivery system provides?  One of the key benefits the trainer facilitator provides is the ability to measure the effectiveness of the training.  This is why most online training is followed up with testing to measure the degree of knowledge of the subject materials.</p>
+                    <p class="mb-4">So while online training provides a comparable level of effectiveness many people prefer to use it as a trainee because it is very flexible allowing them to learn at their own pace and for some the ability to learn in private is also beneficial.  For the training coordinator, it is typically a lot easier to schedule online delivered training because they just issue access codes and monitor the progress rather than trying to schedule group training in batches throughout the year.  The replacement of paper based WHMIS tests and training materials is also a more environmentally friendly option, making online a more affordable training choice.</p>
+                    <p><a href="/">Return from WHMIS Training Online to WHMIS Certified</a></p>
+                </article>
+
+                <div class="md:col-span-4 flex justify-center md:justify-end">
+                    <div class="w-full max-w-xs h-full">
+                        <SignupCard 
+                            multiLink="https://safeandcertified.com/register/register-self-serve-business.asp" 
+                            singleLink="https://safeandcertified.com/register/register-personal.asp" 
+                            multiPrice="$19.99" 
+                            singlePrice="$29.99" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</MainLayout>

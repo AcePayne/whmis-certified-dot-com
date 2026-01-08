@@ -1,0 +1,35 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import SignupCard from "../components/SignupCard.astro";
+---
+<MainLayout 
+    title="WHMIS Testing Online Certificate" 
+    description="WHMIS testing is an important part of meeting WHMIS requirements in Canada. The WHMIS test is completed online and stored electronically.">
+    <section id="article" class="mt-1">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid md:grid-cols-12 gap-6 items-stretch">
+                <article class="md:col-span-8 bg-linear-to-b from-amber-50 to-white p-6 rounded-lg shadow-md border border-amber-100 leading-relaxed text-slate-700">
+                    <h1 class="text-2xl font-bold mb-4">WHMIS Testing - Provides Measure of Knowledge</h1>
+                    <p class="mb-4">WHMIS testing is an important part of creating your due diligence as an Employer.  You want to ensure your employees know how to safely use controlled products in the workplace.  This includes providing training on the basic information of the WHMIS legislation, the WHMIS symbols, and the ability to read and understand a Safety Data Sheet (SDS). But training in itself is subjective.  How do you know if your training is effective?  </p>
+                    <p class="mb-4">Employee testing is one way you can objectively show that each employee was able to pass a test on a regular basis, typically on their initial hiring and then annually as a WHMIS refresher test.  When each employee passes their online WHMIS test they receive a Certificate similar to the one below which comes in a full size format and as a wallet size WHMIS certificate.  Both are available to be printed on completion of the test and can also be emailed as a .PDF version</p>
+                    <p class="mb-4">As the Company Administrator you have access to all your employee training records showing when they accessed the system, their individual test results, and their certificate of completion.  You can view their training history, drill down to the test results, and reprint their certificate.  If you have a WHMIS inspection and need to provide the backup to support your WHMIS training, you will have this information available in seconds.  This is a great online WHMIS training information management system.</p>
+                    <p class="mb-4">The SafeAndCertified.com online testing system can be used as for individual testing on an honour system where employees log in and take the test on their own.    In fact because employees are allowed to have WHMIS training materials in the workplace many training coordinators are OK with employees using materials during the test in an open book testing format.  Other training coordinators discourage this, wanting their employees to know the material without having to stop and check reference material.  And in its strictest form, some use a form of proctoring where employees complete the testing in a supervised environment where employees are authenticated, login and complete the test in the presence of a proctor.  The system is very flexible and able to accommodate a variety of WHMIS testing methods.</p>
+                    <div class="center p-4">
+                        <img alt="WHMIS Testing Certificate" src="images/SAFE_Certificate_2.jpg">
+                    </div>
+                    <p><a class="text-sky-600 hover:underline" href="/">Return from WHMIS Testing to WHMIS Certified</a></p>
+                </article>
+
+                <div class="md:col-span-4 flex justify-center md:justify-end">
+                    <div class="w-full max-w-xs h-full">
+                        <SignupCard 
+                            multiLink="https://safeandcertified.com/register/register-self-serve-business.asp" 
+                            singleLink="https://safeandcertified.com/register/register-personal.asp" 
+                            multiPrice="$19.99" 
+                            singlePrice="$29.99" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</MainLayout>

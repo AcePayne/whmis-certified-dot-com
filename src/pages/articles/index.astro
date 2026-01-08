@@ -2,14 +2,26 @@
 import { getCollection } from 'astro:content';
 import type { CollectionEntry } from 'astro:content';
 import MainLayout from '../../layouts/MainLayout.astro';
+import SignupCard from '../../components/SignupCard.astro';
 
 const articles = await getCollection('articles');
 ---
 <MainLayout title="WHMIS Articles" description="A collection of WHMIS related articles.">
-    <h1>WHMIS Articles</h1>
-    <ul>
-    {articles.map((article: CollectionEntry<'articles'>) => (
-    <li><a href={`/articles/${article.slug}`}>{article.data.title}</a></li>
-    ))}
-    </ul>
+    
+    <section class="grid md:grid-cols-12 gap-10 items-stretch">
+        <div class="md:col-span-8 h-full space-y-6 bg-white/70 backdrop-blur-sm p-6 rounded-lg shadow-sm">
+            <h1 class="text-2xl font-bold">WHMIS Articles</h1>
+            <ul class="m-10">
+            {articles.map((article: CollectionEntry<'articles'>) => (
+                <li><a class="text-sky-600 hover:underline" href={`/articles/${article.slug}`}>{article.data.title}</a></li>
+            ))}
+            </ul>
+        </div>
+        <div class="md:col-span-4 flex justify-center md:justify-end">
+            <div class="w-full max-w-xs h-full">
+				<SignupCard multiLink="/group" singleLink="/self" multiPrice="$19.99" singlePrice="$29.99" />
+			</div>
+        </div>
+    </section>
+    
 </MainLayout>
