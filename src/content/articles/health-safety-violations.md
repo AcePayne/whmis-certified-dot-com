@@ -26,8 +26,8 @@ Knowledge is power, and educating employees on safe practices is the law. Employ
 
 Contact us today to discuss your online training needs.
 
-- Website: [www.safeandcertified.com](http://www.SafeAndCertified.com)
+- Website: [safeandcertified.com](https://SafeAndCertified.com)
 - Toll-Free: **1-877-425-5820**
 - Email: [info@safeandcertified.com](mailto:info@safeandcertified.com)
 
-[Return from WHMIS Training Comparison to WHMIS Articles](WHMIS-articles.asp)
+[Return from Health and Safety Violations to WHMIS Articles](/articles/)

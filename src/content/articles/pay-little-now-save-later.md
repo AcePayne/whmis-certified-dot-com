@@ -25,4 +25,4 @@ Contact us today to learn more about how paying a little bit now, can save you a
 Toll-Free at **1-877-425-5820**   
 Email at [info@safeandcertified.com](mailto:info@safeandcertified.com)  
 
-[Return from WHMIS Training Comparison to WHMIS Articles](/) 
+[Return from Pay Little Save Later to WHMIS Articles](/) 

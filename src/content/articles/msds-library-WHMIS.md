@@ -21,4 +21,4 @@ How are you currently storing, tracking and controlling your MSDS sheets? Perhap
 Toll-Free at **1-877-425-5820**   
 Email at [info@safeandcertified.com](mailto:info@safeandcertified.com)  
 
-[Return from WHMIS Training Comparison to WHMIS Articles](/articles/)
+[Return from MSDS Library WHMIS to WHMIS Articles](/articles/)

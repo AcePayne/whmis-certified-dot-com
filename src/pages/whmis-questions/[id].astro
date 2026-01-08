@@ -1,0 +1,26 @@
+---
+import ArticleLayout from '../../layouts/ArticleLayout.astro';
+import Prose from '../../components/Prose.astro';
+import { getCollection, render } from 'astro:content';
+import type { CollectionEntry } from 'astro:content';
+
+export async function getStaticPaths() {
+  const questions = await getCollection('questions');
+  return questions.map((question: CollectionEntry<'questions'>) => ({
+    params: { id: question.slug },
+    props: { question },
+  }));
+}
+
+interface Props {
+  question: CollectionEntry<'questions'>;
+}
+
+const { question } = Astro.props;
+const { Content } = await render(question);
+---
+<ArticleLayout title={question.data.title} description={question.data.description}>
+    <Prose>
+      <Content />
+    </Prose>
+</ArticleLayout>
