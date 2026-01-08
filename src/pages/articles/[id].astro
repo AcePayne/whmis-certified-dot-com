@@ -20,7 +20,6 @@ const { article } = Astro.props;
 const { Content } = await render(article);
 ---
 <ArticleLayout title={article.data.title} description={article.data.description}>
-    <h1>{article.data.title}</h1>
     <Prose>
       <Content />
     </Prose>

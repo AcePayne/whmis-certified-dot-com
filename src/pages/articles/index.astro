@@ -9,7 +9,7 @@ const articles = await getCollection('articles');
     <h1>WHMIS Articles</h1>
     <ul>
     {articles.map((article: CollectionEntry<'articles'>) => (
-    <li><a href={`/articles/${article.id}`}>{article.data.title}</a></li>
+    <li><a href={`/articles/${article.slug}`}>{article.data.title}</a></li>
     ))}
     </ul>
 </MainLayout>
